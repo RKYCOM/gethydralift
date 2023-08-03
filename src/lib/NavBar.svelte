@@ -26,8 +26,8 @@
 		<MenuButton
 			class={({ open }) =>
 				`${
-					open ? 'bg-zinc-300' : ''
-				} flex items-center justify-center rounded-md p-2 text-3xl transition duration-150 ease-in-out hover:bg-zinc-300 active:scale-90`}
+					open ? 'bg-zinc-200' : ''
+				} flex items-center justify-center rounded-md p-2 text-3xl transition duration-150 ease-in-out hover:bg-zinc-200 active:scale-90`}
 		>
 			<i class="bx bx-menu-alt-right" />
 		</MenuButton>
@@ -51,7 +51,7 @@
 	}
 
 	.logo {
-		@apply items-center px-2 py-1;
+		@apply items-center px-3 py-2;
 	}
 
 	.logo img {
@@ -63,6 +63,6 @@
 	}
 
 	a {
-		@apply flex rounded-xl px-3 py-2 transition duration-150 ease-in-out hover:bg-zinc-300 active:scale-90;
+		@apply flex rounded-xl px-3 py-2 transition duration-150 ease-in-out hover:bg-zinc-200 active:scale-90;
 	}
 </style>
