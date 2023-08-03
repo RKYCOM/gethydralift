@@ -1,3 +1,5 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
+
 /** @type {import('tailwindcss').Config}*/
 const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -18,6 +20,10 @@ const config = {
 					900: '#245629',
 					950: '#17361A'
 				}
+			},
+			fontFamily: {
+				inter: ['Inter Tight', ...defaultTheme.fontFamily.sans],
+				opensans: ['Open Sans', ...defaultTheme.fontFamily.sans]
 			}
 		}
 	},
