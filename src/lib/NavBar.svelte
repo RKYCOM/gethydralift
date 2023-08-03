@@ -47,7 +47,7 @@
 
 <style lang="postcss">
 	nav {
-		@apply fixed flex w-full items-center justify-between border-b-2 border-b-zinc-300 bg-white px-14 py-2;
+		@apply sticky z-10 flex w-full items-center justify-between border-b-2 border-b-zinc-300 bg-white px-14 py-2;
 	}
 
 	.logo {
