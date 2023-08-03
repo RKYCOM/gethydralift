@@ -91,6 +91,14 @@
 		@apply mb-8;
 	}
 
+	section h2 {
+		@apply mb-7 text-center font-inter text-4xl font-bold;
+	}
+
+	section > p {
+		@apply -mt-6 mb-7 text-center text-lg italic;
+	}
+
 	.info-cards {
 		@apply container mx-auto flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5 md:gap-12;
 	}
@@ -115,16 +123,12 @@
 		@apply bg-zinc-200 px-10 py-16;
 	}
 
-	.intro-info h2 {
-		@apply mb-7 text-center font-inter text-4xl font-bold;
-	}
-
 	.intro-info-content {
 		@apply flex gap-8;
 	}
 
 	.intro-info-content img {
-		@apply hidden w-1/6 object-contain xl:block;
+		@apply hidden w-1/6 object-contain object-center xl:block;
 	}
 
 	.intro-info-text {
