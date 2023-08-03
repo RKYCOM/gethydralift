@@ -44,11 +44,11 @@
 	}
 
 	.hero-text h1 {
-		@apply w-3/4 font-inter text-4xl font-bold uppercase text-hydragreen-500 md:text-5xl lg:text-7xl;
+		@apply mb-2 w-3/4 font-inter text-4xl font-bold uppercase text-hydragreen-500 md:text-5xl lg:text-7xl;
 	}
 
 	.hero-text p {
-		@apply text-lg font-thin italic lg:text-2xl;
+		@apply text-lg font-thin italic leading-tight lg:text-2xl;
 	}
 
 	.hero-img {
