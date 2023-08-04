@@ -4,6 +4,7 @@
 
 	const links = [
 		{ name: 'Showcase', href: '/showcase' },
+		{ name: 'Files', href: '/files' },
 		{ name: 'Video', href: '/#video' },
 		{ name: 'Contact Us', href: '#contact' }
 	];
