@@ -2,7 +2,8 @@
 	<title>Showcase - Hydralift</title>
 	<meta
 		name="description"
-		content="See exactly why the Hydralift will save your company and personnel time, money, and risk of injury."
+		content="We developed the Hydralift so that a single operator can perform the task safely while also
+		being able to reduce time and cost."
 	/>
 </svelte:head>
 
