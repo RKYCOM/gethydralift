@@ -2,6 +2,14 @@
 	import Youtube from 'svelte-youtube-embed';
 </script>
 
+<svelte:head>
+	<title>Hydralift - A Better Way to Raise and Lower Rods</title>
+	<meta
+		name="description"
+		content="The Hydralift was invented out of necessity. The current industry methods are extremely expensive or primitive and dangerous. They require excessive labor and time. The supplementation of this device will save your company personnel time, money and risk of injury."
+	/>
+</svelte:head>
+
 <section class="hero">
 	<div class="hero-text">
 		<h1>The Hydralift</h1>

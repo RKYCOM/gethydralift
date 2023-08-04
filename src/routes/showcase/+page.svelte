@@ -1,3 +1,11 @@
+<svelte:head>
+	<title>Showcase - Hydralift</title>
+	<meta
+		name="description"
+		content="See exactly why the Hydralift will save your company and personnel time, money, and risk of injury."
+	/>
+</svelte:head>
+
 <section>
 	<h2>JSA Comparison/Advantages</h2>
 	<p>
