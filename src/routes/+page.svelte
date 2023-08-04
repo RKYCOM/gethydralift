@@ -38,34 +38,40 @@
 	</article>
 </section>
 
-<section class="intro-info">
+<section class="introduction">
 	<h2>Introducing the Hydralift</h2>
-	<div class="intro-info-content">
+	<div class="intro-content">
 		<img src="/images/hydralift-inaction.png" alt="Hydralift in action" />
-		<div class="intro-info-text">
-			<h3>As a well optimization specialist</h3>
-			<p>
-				in the Rocky Mountain region, I've worked daily to increase and maintain production on
-				artifically lifted oil wells. This often requires adjusting the depth of the pump plunger in
-				the barrel to increase compression, battle gas interference, or to temporarily tag the pump
-				due to solids in the valves.
-			</p>
-			<h3>A better way to raise and lower rods</h3>
-			<p>
-				If you've ever lowered rods, you know what we're talking about. Even the best impact gloves
-				won't save your finders if they're caught in a pinch point with the rod string weight on top
-				of them. Being able to optimize wells in this day in age is critical to surviving the down
-				turn we are facing.
-			</p>
-			<h3>The Hydralift was invented out of necessity</h3>
-			<p>
-				The current industry methods are extremely expensive, or primative and dangerous. As well,
-				they require excessive labor and time. The Hydralift is <strong>80% cheaper</strong> and
-				<strong>10x faster</strong> than traditional methods. How often does our industry get to enforce
-				a new safety program that simultaneously allows individuals to work safer, save time, and of
-				course, money? We decided to throw conventional methods in the trash and went to work creating
-				the new standard of safety and operation, the Hydralift.
-			</p>
+		<div class="intro-text">
+			<div>
+				<h3>As a well optimization specialist</h3>
+				<p>
+					in the Rocky Mountain region, I've worked daily to increase and maintain production on
+					artifically lifted oil wells. This often requires adjusting the depth of the pump plunger
+					in the barrel to increase compression, battle gas interference, or to temporarily tag the
+					pump due to solids in the valves.
+				</p>
+			</div>
+			<div>
+				<h3>A better way to raise and lower rods</h3>
+				<p>
+					If you've ever lowered rods, you know what we're talking about. Even the best impact
+					gloves won't save your finders if they're caught in a pinch point with the rod string
+					weight on top of them. Being able to optimize wells in this day in age is critical to
+					surviving the down turn we are facing.
+				</p>
+			</div>
+			<div>
+				<h3>The Hydralift was invented out of necessity</h3>
+				<p>
+					The current industry methods are extremely expensive, or primative and dangerous. As well,
+					they require excessive labor and time. The Hydralift is <strong>80% cheaper</strong> and
+					<strong>10x faster</strong> than traditional methods. How often does our industry get to enforce
+					a new safety program that simultaneously allows individuals to work safer, save time, and of
+					course, money? We decided to throw conventional methods in the trash and went to work creating
+					the new standard of safety and operation, the Hydralift.
+				</p>
+			</div>
 		</div>
 	</div>
 </section>
@@ -119,27 +125,31 @@
 		@apply text-lg;
 	}
 
-	.intro-info {
+	.introduction {
 		@apply bg-zinc-200 px-10 py-16;
 	}
 
-	.intro-info-content {
+	.intro-content {
 		@apply flex gap-8;
 	}
 
-	.intro-info-content img {
+	.intro-content img {
 		@apply hidden w-1/6 object-contain object-center xl:block;
 	}
 
-	.intro-info-text {
-		@apply xl:w-5/6;
+	.intro-text {
+		@apply flex flex-col justify-evenly xl:w-5/6;
 	}
 
-	.intro-info-text h3 {
+	.intro-text > * {
+		@apply mb-4 last:mb-0;
+	}
+
+	.intro-text h3 {
 		@apply mb-1 font-inter text-xl font-bold md:text-2xl;
 	}
 
-	.intro-info-text p {
-		@apply mb-4 leading-tight last:mb-0 md:text-lg;
+	.intro-text p {
+		@apply leading-tight md:text-lg;
 	}
 </style>
