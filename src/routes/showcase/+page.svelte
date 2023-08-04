@@ -96,7 +96,7 @@
 
 <style lang="postcss">
 	section {
-		@apply container mx-auto;
+		@apply container mx-auto flex flex-col items-center;
 	}
 
 	p {
@@ -104,7 +104,7 @@
 	}
 
 	article {
-		@apply flex flex-col sm:flex-row sm:px-6 md:px-16 lg:px-24;
+		@apply flex flex-col gap-4 sm:flex-row sm:px-6 md:px-16 lg:px-24;
 	}
 
 	article div {
