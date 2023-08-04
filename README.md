@@ -8,4 +8,4 @@ The new Hydralift website, built for [Rocky Mountain Oilfield Warehouse](https:/
 - [TailwindCSS](https://tailwindcss.com/docs)
 - [BoxIcons](https://boxicons.com)
 - [svelte-youtube-embed](https://www.npmjs.com/package/svelte-youtube-embed)
-- [svelte-headlessui](https://www.npmjs.com/package/@rgossiaux/svelte-headlessui)
+- [svelte-headlessui](https://www.npmjs.com/package/svelte-headlessui)
