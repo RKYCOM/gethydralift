@@ -3,8 +3,8 @@
 
 	const links = [
 		{ name: 'Showcase', href: '/showcase' },
-		{ name: 'Contact Us', href: '/contact' },
-		{ name: 'Video', href: '/video' }
+		{ name: 'Video', href: '/#video' },
+		{ name: 'Contact Us', href: '#contact' }
 	];
 </script>
 
