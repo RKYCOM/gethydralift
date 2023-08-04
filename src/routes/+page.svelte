@@ -154,7 +154,7 @@
 	}
 
 	.intro-text h3 {
-		@apply mb-1 font-inter text-xl font-bold md:text-2xl;
+		@apply mb-1 font-inter text-xl font-bold leading-tight md:text-2xl;
 	}
 
 	.intro-text p {

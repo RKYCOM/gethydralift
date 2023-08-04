@@ -9,7 +9,7 @@
 
 <style lang="postcss">
 	footer {
-		@apply bg-zinc-200 py-3 text-center;
+		@apply bg-zinc-200 px-2 py-3 text-center text-xs sm:px-0 sm:text-sm;
 	}
 
 	footer a {

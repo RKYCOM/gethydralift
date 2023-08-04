@@ -1,8 +1,9 @@
-<section>
+<section id="contact">
 	<h2>Contact Us</h2>
 	<div class="content">
 		<div class="contact-info">
 			<p><span class="label">Phone:</span> (307) 255-2260</p>
+			<p><span class="label">Email:</span> <a href="mailto:sales@rmow.com">sales@rmow.com</a></p>
 			<p>414 S. Elm Street<br />Casper, WY 82601</p>
 		</div>
 		<form action="https://usebasin.com/f/cd8259376bb8" method="POST">
@@ -33,15 +34,19 @@
 	}
 
 	.contact-info {
-		@apply w-1/4;
+		@apply w-full sm:w-1/4;
 	}
 
 	.label {
 		@apply font-inter font-bold uppercase;
 	}
 
+	a {
+		@apply underline;
+	}
+
 	form {
-		@apply flex w-3/4 flex-col gap-3;
+		@apply flex w-full flex-col gap-3 sm:w-3/4;
 	}
 
 	form div {
@@ -62,6 +67,6 @@
 	}
 
 	form button {
-		@apply w-1/4 rounded-md bg-black py-2 transition duration-200 ease-in-out hover:bg-white hover:text-black active:scale-90;
+		@apply w-1/4 rounded-md bg-black py-2 font-bold transition duration-200 ease-in-out hover:bg-white hover:text-black active:scale-90;
 	}
 </style>
