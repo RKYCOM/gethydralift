@@ -1,6 +1,14 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { Menu, MenuButton, MenuItem, MenuItems } from '@rgossiaux/svelte-headlessui';
+	import { createMenu } from 'svelte-headlessui';
+
+	const menu = createMenu();
+	let open: boolean;
+
+	function handleOpen() {
+		open = true;
+		return () => (open = false);
+	}
 
 	const links = [
 		{ name: 'Showcase', href: '/showcase' },
@@ -24,29 +32,28 @@
 		{/each}
 	</ul>
 
-	<Menu class="md:hidden">
-		<MenuButton
-			let:open
-			class={({ open }) =>
-				`${
-					open ? 'bg-zinc-200' : ''
-				} flex items-center justify-center rounded-md p-2 text-3xl transition duration-150 ease-in-out hover:bg-zinc-200 active:scale-90`}
+	<div class="md:hidden">
+		<button
+			use:menu.button
+			on:select={handleOpen}
+			class={`${
+				open ? 'bg-zinc-200' : ''
+			} flex items-center justify-center rounded-md p-2 text-3xl transition duration-150 ease-in-out hover:bg-zinc-200 active:scale-90`}
 		>
 			<i class="bx bx-menu-alt-right" class:hidden={open} />
 			<i class="bx bx-x" class:hidden={!open} />
-		</MenuButton>
-		<MenuItems
+		</button>
+		<div
+			use:menu.items
 			class="absolute right-3 mt-5 w-48 origin-top-right space-y-2 rounded-md bg-white px-2 py-3 shadow-lg ring-1 ring-black ring-opacity-5"
 		>
 			{#each links as link}
 				<div>
-					<MenuItem>
-						<a class:active={$page.url.pathname === link.href} href={link.href}>{link.name}</a>
-					</MenuItem>
+					<a class:active={$page.url.pathname === link.href} href={link.href}>{link.name}</a>
 				</div>
 			{/each}
-		</MenuItems>
-	</Menu>
+		</div>
+	</div>
 </nav>
 
 <style lang="postcss">
