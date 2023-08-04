@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import { Menu, MenuButton, MenuItem, MenuItems } from '@rgossiaux/svelte-headlessui';
 
 	const links = [
@@ -17,7 +18,7 @@
 	<ul>
 		{#each links as link}
 			<li>
-				<a href={link.href}>{link.name}</a>
+				<a class:active={$page.url.pathname === link.href} href={link.href}>{link.name}</a>
 			</li>
 		{/each}
 	</ul>
@@ -39,7 +40,7 @@
 			{#each links as link}
 				<div>
 					<MenuItem>
-						<a href={link.href}>{link.name}</a>
+						<a class:active={$page.url.pathname === link.href} href={link.href}>{link.name}</a>
 					</MenuItem>
 				</div>
 			{/each}
@@ -66,5 +67,9 @@
 
 	a {
 		@apply flex rounded-xl px-3 py-2 transition duration-150 ease-in-out hover:bg-zinc-200 active:scale-90;
+	}
+
+	.active {
+		@apply bg-zinc-200;
 	}
 </style>
