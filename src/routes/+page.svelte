@@ -1,3 +1,7 @@
+<script lang="ts">
+	import Youtube from 'svelte-youtube-embed';
+</script>
+
 <section class="hero">
 	<div class="hero-text">
 		<h1>The Hydralift</h1>
@@ -76,6 +80,13 @@
 	</div>
 </section>
 
+<section id="video">
+	<h2>See The Hydralift in Action</h2>
+	<div class="container mx-auto">
+		<Youtube id="UKNUuaY5Ezc" --title-color="transparent" --title-shadow-color="transparent" />
+	</div>
+</section>
+
 <style lang="postcss">
 	.hero {
 		@apply container mx-auto flex flex-col-reverse items-center justify-between gap-2 sm:flex-row;
@@ -101,8 +112,9 @@
 		@apply mb-7 text-center font-inter text-4xl font-bold;
 	}
 
-	section > p {
-		@apply -mt-6 mb-7 text-center text-lg italic;
+	section.introduction,
+	#video {
+		@apply px-10;
 	}
 
 	.info-cards {
@@ -126,7 +138,7 @@
 	}
 
 	.introduction {
-		@apply bg-zinc-200 px-10 py-16;
+		@apply bg-zinc-200 py-16;
 	}
 
 	.intro-content {
@@ -151,5 +163,9 @@
 
 	.intro-text p {
 		@apply leading-tight md:text-lg;
+	}
+
+	#video {
+		@apply py-8;
 	}
 </style>
