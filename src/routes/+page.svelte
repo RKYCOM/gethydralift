@@ -108,10 +108,6 @@
 		@apply mb-8;
 	}
 
-	section h2 {
-		@apply mb-7 text-center font-inter text-4xl font-bold;
-	}
-
 	section.introduction,
 	#video {
 		@apply px-10;
