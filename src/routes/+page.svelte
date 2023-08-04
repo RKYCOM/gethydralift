@@ -87,6 +87,50 @@
 	</div>
 </section>
 
+<section id="kit">
+	<h2>The Hydralift Kit</h2>
+	<p>Packaged in a Pelican Case</p>
+	<div class="info-cards">
+		<div class="card">
+			<div class="card-header">
+				<img src="/images/hydralift-pump.svg" alt="Hydralift Hydraulic Pump" />
+			</div>
+			<div class="card-text">
+				<h3>Hydraulic Pump</h3>
+				<p>
+					The hydraulic pumps powerful 0,37 kw motor and *qty2 28 volt lithium-ion battery deliver
+					exceptional speed and run time.
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<img src="/images/hydralift-spacer.svg" alt="Hydralift Spacers" />
+			</div>
+			<div class="card-text">
+				<h3>Spacers</h3>
+				<p>
+					Permanent spacers are designed in 3”, 6”, and 9” sizes. The interior spacer teardrop
+					design allows for easy removal or insertion of the spacer.
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<img src="/images/hydralift-pole.svg" alt="Hydralift Pole" />
+			</div>
+			<div class="card-text">
+				<h3>Spacer Pole</h3>
+				<p>
+					Designed to lift the permanent spacers into position or remove easily and safely with no
+					additional equipment.
+				</p>
+			</div>
+		</div>
+	</div>
+	<p>*Operates on one battery and back up battery included.</p>
+</section>
+
 <style lang="postcss">
 	.hero {
 		@apply container mx-auto flex flex-col-reverse items-center justify-between gap-2 sm:flex-row;
@@ -126,15 +170,15 @@
 	}
 
 	.card-text h3 {
-		@apply -mb-1 font-inter text-xl font-bold uppercase md:text-2xl lg:text-4xl;
+		@apply font-inter text-xl font-bold uppercase md:text-2xl lg:text-4xl;
 	}
 
 	.card-text p {
-		@apply text-lg;
+		@apply text-base sm:text-lg;
 	}
 
 	.introduction {
-		@apply bg-zinc-200 py-16;
+		@apply bg-zinc-200 py-10 md:py-16;
 	}
 
 	.intro-content {
@@ -163,5 +207,33 @@
 
 	#video {
 		@apply py-8;
+	}
+
+	#kit {
+		@apply bg-zinc-200 py-10 md:py-16;
+	}
+
+	#kit > p:first-of-type {
+		@apply -mt-7 mb-7 text-center text-base italic md:text-lg;
+	}
+
+	#kit > p {
+		@apply mt-7 text-center text-sm italic;
+	}
+
+	#kit .info-cards .card {
+		@apply flex flex-col items-center gap-3;
+	}
+
+	#kit .info-cards .card .card-header {
+		@apply h-32 sm:h-48;
+	}
+
+	#kit .info-cards .card .card-header img {
+		@apply h-full w-auto object-contain;
+	}
+
+	#kit .info-cards .card .card-text h3 {
+		@apply mb-2;
 	}
 </style>
