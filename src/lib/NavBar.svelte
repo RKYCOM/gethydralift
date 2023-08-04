@@ -36,7 +36,7 @@
 			<i class="bx bx-x" class:hidden={!open} />
 		</MenuButton>
 		<MenuItems
-			class="absolute right-14 mt-5 w-48 origin-top-right space-y-2 rounded-md bg-white px-2 py-3 shadow-lg ring-1 ring-black ring-opacity-5"
+			class="absolute right-3 mt-5 w-48 origin-top-right space-y-2 rounded-md bg-white px-2 py-3 shadow-lg ring-1 ring-black ring-opacity-5"
 		>
 			{#each links as link}
 				<div>
@@ -51,7 +51,7 @@
 
 <style lang="postcss">
 	nav {
-		@apply sticky z-10 flex w-full items-center justify-between border-b-2 border-b-zinc-300 bg-white px-14 py-2;
+		@apply sticky z-10 flex w-full items-center justify-between border-b-2 border-b-zinc-300 bg-white px-3 py-2 md:px-8 lg:px-14;
 	}
 
 	.logo {
