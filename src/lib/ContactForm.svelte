@@ -2,23 +2,28 @@
 	<h2>Contact Us</h2>
 	<div class="content">
 		<div class="contact-info">
-			<p><span class="label">Phone:</span> (307) 255-2260</p>
+			<p><span class="label">Phone:</span> <a href="tel:+1307-266-2260">(307) 266-2260</a></p>
 			<p><span class="label">Email:</span> <a href="mailto:sales@rmow.com">sales@rmow.com</a></p>
 			<p>414 S. Elm Street<br />Casper, WY 82601</p>
 		</div>
 		<form action="https://usebasin.com/f/cd8259376bb8" method="POST">
 			<div>
-				<label for="name">Name</label>
-				<input type="text" name="name" required />
+				<label for="name">Name *</label>
+				<input type="text" name="name" placeholder="John Doe" required />
 			</div>
 			<div>
-				<label for="email">Email</label>
-				<input type="email" name="email" required />
+				<label for="email">Email *</label>
+				<input type="email" name="email" placeholder="you@example.com" required />
+			</div>
+			<div>
+				<label for="phone">Phone</label>
+				<input type="tel" name="phone" placeholder="000-000-000" />
 			</div>
 			<div>
 				<label for="message">Message</label>
-				<textarea name="message" placeholder="Your message here..." required />
+				<textarea name="message" placeholder="Your message here..." />
 			</div>
+			<input type="hidden" name="_verify" />
 			<button type="submit">Send</button>
 		</form>
 	</div>
@@ -67,6 +72,6 @@
 	}
 
 	form button {
-		@apply w-1/4 rounded-md bg-black py-2 font-bold transition duration-200 ease-in-out hover:bg-white hover:text-black active:scale-90;
+		@apply w-full rounded-md bg-black py-2 font-bold transition duration-200 ease-in-out hover:bg-white hover:text-black active:scale-90 lg:w-1/4;
 	}
 </style>
